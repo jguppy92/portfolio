@@ -21,6 +21,35 @@ hr {
   margin: 0px 5px;
 }
 
+.social-link {
+  display: inline;
+}
+
+.software-icons  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  li {
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 20px 5px 5px 5px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    font-size: 13px;
+    i {
+      font-size: 50px;
+    }
+  }
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+}
+
 .dark {
   background-color: $brand-dark-grey;
   color: white;
