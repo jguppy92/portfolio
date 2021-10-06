@@ -1,0 +1,31 @@
+@import '~bulma/bulma.sass';
+
+$brand-dark-grey: #242323;
+$brand-purple: #ac6fde;
+
+* {
+  font-family: 'Roboto Slab', serif;
+}
+
+.navbar-end {
+  .purple {
+    color: $brand-purple;
+  } 
+}
+
+hr {
+  background-color: $brand-purple;
+}
+
+.social-icon {
+  margin: 0px 5px;
+}
+
+.dark {
+  background-color: $brand-dark-grey;
+  color: white;
+  h1, p {
+    color: white;
+  }
+}
+
