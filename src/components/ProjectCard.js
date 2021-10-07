@@ -48,6 +48,14 @@ function ProjectCard() {
                 <i key={icon} className={icon}></i>
               ))}
             </div>
+            <div className="project-links">
+              <a href={selectedProject.deployedLink} className="button is-rounded proj-button">
+                <i className="devicon-firefox-plain small-icon"></i>
+              </a>
+              <a href={selectedProject.github} className="button is-rounded proj-button">
+                <i className="devicon-github-original small-icon"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
