@@ -5,13 +5,14 @@ $brand-purple: #ac6fde;
 
 * {
   font-family: 'Roboto Slab', serif;
+  box-sizing: border-box;
 }
 
-.navbar-end {
-  .purple {
-    color: $brand-purple;
-  } 
-}
+
+.button {
+  color: $brand-purple;
+  font-weight: bold;
+} 
 
 hr {
   background-color: $brand-purple;
@@ -56,5 +57,70 @@ hr {
   h1, p {
     color: white;
   }
+}
+
+.purple-text {
+  color: $brand-purple;
+}
+
+.proj-text-container {
+  height: fit-content;
+  p {
+    height: fit-content;
+  }
+  i {
+    font-size: 50px;
+    margin: 5px 3px;
+  }
+}
+
+.arrow-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-card {
+  position: relative;
+  background-size: cover;
+  padding: 0;
+  height: 20em;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: rgba(36, 35, 34, 0.75); /* Tint color */
+  background-blend-mode: multiply;
+  h2 {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  h2, p {
+    color: white;
+    padding: 0px 15px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.language {
+  background-image: url('../assets/書道.jpg');
+}
+.music {
+  background-image: url('../assets/jazz-bass.jpg');
+}
+.football {
+  background-image: url('../assets/tottenham-stadium.jpg');
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin: 5px 0px;
+  }
+
 }
 

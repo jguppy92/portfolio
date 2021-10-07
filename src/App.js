@@ -1,6 +1,8 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import Typical from 'react-typical'
+import ProjectCard from './components/ProjectCard'
+import AboutMe from './data/AboutMeBio'
 
 function App() {
   return (
@@ -24,7 +26,7 @@ function App() {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button purple is-inverted" href="#contact">
+              <a className="button is-inverted" href="#contact">
                 <strong>Contact Me</strong>
               </a>
             </div>
@@ -54,13 +56,11 @@ function App() {
         </div>
       </section>
       <section className="section is-medium" id="about">
+        <h1 className="title"><span className="purple-text">A</span>bout Me</h1>
         <div className="columns">
           <div className="column is-two-fifths">
-            <h1 className="title">About Me</h1>
-            <hr width="32%" className="subtitle-underline"/>
-            <p className="text">
-              I am a fullstack software engineer who studied at General Assembley.
-            </p>
+            <h2 className="subtitle">I am a Fullstack Software Engineer with a background in marketing and linguistics.</h2>
+            <AboutMe />
           </div>
           <div className="column is-three-fifths">
             <h1 className="title">Skills</h1>
@@ -144,56 +144,67 @@ function App() {
           </div>
         </div>       
       </section>
-      <section className="section is-large dark" id="projects">
-        <h1 className="title">Projects</h1>
-        <div className="columns">
-          <div className="column is-two-fifths">
-            <p className="text">
-              Image here
-            </p>
-          </div>
-          <div className="column is-three-fifths">
-            <h1 className="title">Project Title</h1>
-            <p className="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>       
+      <section className="section is-medium dark" id="projects">
+        <h1 className="title"><span className="purple-text">P</span>rojects</h1>
+        <ProjectCard />      
       </section>
       <section className="section is-medium" id="interests">
+        <h1 className="title"><span className="purple-text">I</span>nterests</h1>
         <div className="columns">
-          <div className="column is-two-fifths">
-            <h1 className="title">Interests</h1>
-            <p className="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+          <div className="column is-third image-card language">
+            <div className="card-text">
+              <h2>Language Learning</h2>
+              <p>I speak business level Japanese and elementary level Korean and still keep up with my studies regularly.</p>
+            </div>
+          </div>
+          <div className="column is-third image-card music">
+            <div className="card-text">
+              <h2>Music</h2>
+              <p>I have been playing bass guitar for over ten years and enjoy record collecting.</p>
+            </div>
+          </div>
+          <div className="column is-third image-card football">
+            <div className="card-text">
+              <h2>Football</h2>
+              <p>I used to regularly play and train with my university 11-a-side football team and occassionally play 5-a-side.</p>
+            </div>
           </div>
         </div>       
       </section>
       <section className="section is-medium dark" id="contact">
-        <h1 className="title">Contact Me</h1>
+        <h1 className="title"><span className="purple-text">C</span>ontact Me</h1>
         <div className="columns">
-          <div className="column is-full">
-            <SocialIcon 
-              url="https://github.com/jguppy92" bgColor="#ac6fde" className="social-icon"
-            />
-            <p className="text">
+          <div className="column is-third">
+            <div className="socials">
+              <SocialIcon 
+                url="https://github.com/jguppy92" bgColor="#ac6fde" className="social-icon"
+              />
+              <p className="text">
               GitHub
-            </p>
-            <SocialIcon 
-              url="https://linkedin.com/in/james-guppy/" bgColor="#ac6fde" 
-              className="social-icon"
-            />
-            <p className="text">
+              </p>
+            </div>
+          </div>
+          <div className="column is-third">
+            <div className="socials">
+              <SocialIcon 
+                url="https://linkedin.com/in/james-guppy/" bgColor="#ac6fde" 
+                className="social-icon"
+              />
+              <p className="text">
               LinkedIn
-            </p>
-            <SocialIcon 
-              url="mailto: j.guppy321@gmail.com?subject=Hey%20I%20found%20your%20website..." bgColor="#ac6fde" 
-              className="social-icon"
-            />
-            <p className="text">
+              </p>
+            </div>
+          </div>
+          <div className="column is-third">
+            <div className="socials">
+              <SocialIcon 
+                url="mailto: j.guppy321@gmail.com?subject=Hey%20I%20found%20your%20website..." bgColor="#ac6fde" 
+                className="social-icon"
+              />
+              <p className="text">
               j.guppy321@gmail.com
-            </p>
+              </p>
+            </div>
           </div>
         </div>       
       </section>
