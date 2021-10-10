@@ -13,11 +13,7 @@ function ProjectCard() {
       setProjectsIndex(projectsIndex + 1)
     }
     setSelectedProject(projects[projectsIndex])
-    // console.log(projectsIndex)
-    // console.log(selectedProject)
   }
-
-  console.log(selectedProject)
 
   const handlePrevious = () => {
     if (projectsIndex <= 0) {
