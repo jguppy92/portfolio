@@ -74,9 +74,13 @@ hr {
   .small-icon {
     font-size: 25px;
   }
+}  
+.proj-techs {
+display: flex;
+flex-wrap: wrap;
 }
 
-.proj-button{
+.proj-button {
   margin: 5px 0px 0px 5px;
 }
 
@@ -114,6 +118,9 @@ hr {
 }
 .music {
   background-image: url('../assets/jazz-bass.jpg');
+  p {
+    margin-bottom: 40px;
+  }
 }
 .football {
   background-image: url('../assets/tottenham-stadium.jpg');
@@ -137,5 +144,15 @@ hr {
 
   .hero-subtitle {
     font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .proj-techs {
+    justify-content: center;
+  }
+
+  .project-links {
+    text-align: center;
   }
 }
