@@ -34,12 +34,13 @@ function ProjectCard() {
     <>
       <div className="columns">
         <div className="column is-two-fifths">
+          <h1 className="title"><span className="purple-text">P</span>rojects</h1>
           <img src={selectedProject.image} alt={selectedProject.title}/>
         </div>
         <div className="column is-three-fifths">
           <div className="proj-text-container">
             <h1 className="title">{selectedProject.title}</h1>
-            <hr width="28%" className="subtitle-underline"/>
+            {/* <hr width="28%" className="subtitle-underline"/> */}
             <p className="text">
               {selectedProject.info}
             </p>

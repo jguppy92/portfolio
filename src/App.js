@@ -36,10 +36,10 @@ function App() {
       <section className="hero dark is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container has-text-centered">
-            <p className="title">
+            <p className="title hero-title">
               James Guppy
             </p>
-            <p className="subtitle">
+            <p className="subtitle hero-subtitle">
               <Typical 
                 steps={['Fullstack Software Engineer', 1000]}
               />
@@ -56,15 +56,14 @@ function App() {
         </div>
       </section>
       <section className="section is-medium" id="about">
-        <h1 className="title"><span className="purple-text">A</span>bout Me</h1>
         <div className="columns">
           <div className="column is-two-fifths">
+            <h1 className="title"><span className="purple-text">A</span>bout Me</h1>
             <h2 className="subtitle">I am a Fullstack Software Engineer with a background in marketing and linguistics.</h2>
             <AboutMe />
           </div>
           <div className="column is-three-fifths">
             <h1 className="title">Skills</h1>
-            <hr width="13%" className="subtitle-underline"/>
             <div className="container-software">
               <ul className="software-icons">
                 <li className="cell">
@@ -145,7 +144,6 @@ function App() {
         </div>       
       </section>
       <section className="section is-medium dark" id="projects">
-        <h1 className="title"><span className="purple-text">P</span>rojects</h1>
         <ProjectCard />      
       </section>
       <section className="section is-medium" id="interests">

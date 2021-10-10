@@ -8,7 +8,6 @@ $brand-purple: #ac6fde;
   box-sizing: border-box;
 }
 
-
 .button {
   color: $brand-purple;
   font-weight: bold;
@@ -131,3 +130,12 @@ hr {
 
 }
 
+@media only screen and (min-width: 600px) {
+  .hero-title {
+    font-size: 70px;
+  }
+
+  .hero-subtitle {
+    font-size: 50px;
+  }
+}
