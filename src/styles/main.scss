@@ -87,6 +87,9 @@ flex-wrap: wrap;
 .arrow-buttons {
   display: flex;
   justify-content: space-evenly;
+  button {
+    width: 115px;
+  }
 }
 
 .image-card {
@@ -144,6 +147,10 @@ flex-wrap: wrap;
 
   .hero-subtitle {
     font-size: 50px;
+  }
+
+  .software-icons {
+    justify-content: left;
   }
 }
 
