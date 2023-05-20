@@ -83,6 +83,14 @@ function App() {
                   <span>Python</span>
                 </li>
                 <li className="cell">
+                  <i className="devicon-ruby-plain"></i>
+                  <span>Ruby</span>
+                </li>
+                <li className="cell">
+                  <i className="devicon-graphql-plain"></i>
+                  <span>GraphQL</span>
+                </li>
+                <li className="cell">
                   <i className="devicon-react-original"></i>
                   <span>React</span>
                 </li>
@@ -111,6 +119,10 @@ function App() {
                   <span>Bootstrap</span>
                 </li>
                 <li className="cell">
+                  <i className="devicon-webpack-plain"></i>
+                  <span>Webpack</span>
+                </li>
+                <li className="cell">
                   <i className="devicon-mongodb-plain"></i>
                   <span>MongoDB</span>
                 </li>
@@ -131,8 +143,20 @@ function App() {
                   <span>GitHub</span>
                 </li>
                 <li className="cell">
+                  <i className="devicon-gitlab-plain"></i>
+                  <span>GitLab</span>
+                </li>
+                <li className="cell">
                   <i className="devicon-heroku-original"></i>
                   <span>Heroku</span>
+                </li>
+                <li className="cell">
+                  <i className="devicon-apple-original"></i>
+                  <span>MacOS</span>
+                </li>
+                <li className="cell">
+                  <i className="devicon-linux-plain"></i>
+                  <span>Linux</span>
                 </li>
                 <li className="cell">
                   <i className="devicon-vscode-plain"></i>
@@ -161,10 +185,10 @@ function App() {
               <p>I have been playing bass guitar for over ten years and enjoy record collecting.</p>
             </div>
           </div>
-          <div className="column is-third image-card football">
+          <div className="column is-third image-card bouldering">
             <div className="card-text">
-              <h2>Football</h2>
-              <p>I used to regularly play and train with my university 11-a-side football team and occassionally play 5-a-side.</p>
+              <h2>Bouldering</h2>
+              <p>I developed a passion for indoor bouldering due to its challenging, problem-solving nature and go weekly.</p>
             </div>
           </div>
         </div>       

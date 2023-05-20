@@ -121,12 +121,9 @@ flex-wrap: wrap;
 }
 .music {
   background-image: url('../assets/jazz-bass.jpg');
-  p {
-    margin-bottom: 40px;
-  }
 }
-.football {
-  background-image: url('../assets/tottenham-stadium.jpg');
+.bouldering {
+  background-image: url('../assets/bouldering.jpg');
 }
 
 .socials {
@@ -137,7 +134,6 @@ flex-wrap: wrap;
   p {
     margin: 5px 0px;
   }
-
 }
 
 @media only screen and (min-width: 600px) {
