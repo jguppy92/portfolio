@@ -173,19 +173,19 @@ function App() {
       <section className="section is-medium" id="interests">
         <h1 className="title"><span className="purple-text">I</span>nterests</h1>
         <div className="columns">
-          <div className="column is-third image-card language">
+          <div className="column is-third image-card language" title="Japanese caligraphy.">
             <div className="card-text">
               <h2>Language Learning</h2>
               <p>I speak business level Japanese and elementary level Korean and still keep up with my studies regularly.</p>
             </div>
           </div>
-          <div className="column is-third image-card music">
+          <div className="column is-third image-card music" title="Fender jazz bass headstock.">
             <div className="card-text">
               <h2>Music</h2>
               <p>I have been playing bass guitar for over ten years and enjoy record collecting.</p>
             </div>
           </div>
-          <div className="column is-third image-card bouldering">
+          <div className="column is-third image-card bouldering" title="Indoor bouldering gym.">
             <div className="card-text">
               <h2>Bouldering</h2>
               <p>I developed a passion for indoor bouldering due to its challenging, problem-solving nature and go weekly.</p>
