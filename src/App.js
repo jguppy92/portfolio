@@ -5,29 +5,48 @@ import ProjectCard from './components/ProjectCard'
 import AboutMe from './data/AboutMeBio'
 
 function App() {
+  const [isOpen, setIsOpen] = React.useState(false)
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen)
+  }
+
+  React.useEffect(() => {
+    setIsOpen(false)
+  }, [])
+
   return (
     <>
-      <nav className="navbar dark is-transparent" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-        </div>
-        <div className="navbar-menu">
-          <div className="navbar-start">
-            <a className="navbar-item" href="#about">
-              <p>About Me</p>
+      <nav className="navbar dark is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+        <div className="container">
+          <div className="navbar-brand">
+            <a to="/" className="navbar-item">
+              
             </a>
-            <a className="navbar-item" href="#projects">
-              <p>Projects</p>
-            </a>
-            <a className="navbar-item" href="#interests">
-              <p>Interests</p>
-            </a>
+            <span
+              className={`navbar-burger ${isOpen ? 'is-active' : ''}`}
+              onClick={handleToggle}
+            >
+              <span />
+              <span />
+              <span />
+            </span>
           </div>
-        </div>
-        <div className="navbar-end">
-          <div className="navbar-item">
-            <div className="buttons">
-              <a className="button is-inverted" href="#contact">
-                <strong>Contact Me</strong>
+          <div className={`navbar-menu dark ${isOpen ? 'is-active' : ''}`}>
+            <div className="navbar-start">
+              <a className="navbar-item" href="#about">
+                <p>About Me</p>
+              </a>
+              <a className="navbar-item" href="#projects">
+                <p>Projects</p>
+              </a>
+              <a className="navbar-item" href="#interests">
+                <p>Interests</p>
+              </a>
+            </div>
+            <div className="navbar-end">
+              <a className="navbar-item" href="#contact">
+                <p>Contact Me</p>
               </a>
             </div>
           </div>
