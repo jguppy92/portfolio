@@ -55,8 +55,8 @@ function ProjectCard() {
         </div>
       </div>
       <div className="arrow-buttons">
-        <button className="button is-inverted" onClick={handlePrevious}>Previous</button>
-        <button className="button is-inverted" onClick={handleNext}>Next</button>
+        <button className="button is-inverted" onClick={handlePrevious}>←</button>
+        <button className="button is-inverted" onClick={handleNext}>→</button>
       </div>
     </>
   )
