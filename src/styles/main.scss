@@ -13,6 +13,10 @@ $brand-purple: #ac6fde;
   font-weight: bold;
 } 
 
+.navbar-burger {
+  color: $brand-purple;
+}
+
 hr {
   background-color: $brand-purple;
 }
@@ -48,6 +52,15 @@ hr {
 .cell {
   display: flex;
   flex-direction: column;
+}
+
+.cell:hover {
+  color: $brand-purple;
+}
+
+.cell:hover i, .cell:hover span{
+  transition: all 0.65s;
+  transform: rotateY(360deg);
 }
 
 .dark {
