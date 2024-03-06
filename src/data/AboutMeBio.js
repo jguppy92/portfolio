@@ -12,7 +12,7 @@ function AboutMe() {
       <br/>
 
 
-      Having over two years of full stack web development experience in the affiliate marketing industry, I was able to solidify a range of technical and personal skills. During this time I built a range of projects using various frontend and backend technologies. I feel most at home using MERN technologies and building RESTful and GraphQL APIs in Django. On top of this I also have some experience coding in Ruby which I’d love an opportunity to develop further.<br/>
+      Having over two years of full stack web development experience in the affiliate marketing industry, I was able to solidify a range of technical and personal skills. During this time I built a range of projects using various frontend and backend technologies. I feel most at home on the MERN stack and building RESTful and GraphQL APIs in Django. On top of this I also have some experience coding in Ruby which I’d love an opportunity to develop further.<br/>
       <br/>
 	    Check out my past and current projects below and feel free to get in touch!
     </p>
