@@ -8,10 +8,14 @@ $brand-purple: #ac6fde;
   box-sizing: border-box;
 }
 
-.button {
+.navbar-item {
+  font-weight: 500;
+}
+
+.navbar-item p:hover {
   color: $brand-purple;
-  font-weight: bold;
-} 
+  cursor: pointer;
+}
 
 .navbar-burger {
   color: $brand-purple;
@@ -80,29 +84,44 @@ hr {
   p {
     height: fit-content;
   }
+}
+
+.proj-button {
+  font-size: 20px;
+  margin: 5px 0px 0px 5px;
+  color: white;
+}
+
+.proj-button:hover {
+  color: $brand-purple;
+}
+
+.proj-techs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 0px;
   i {
     font-size: 50px;
     margin: 5px 3px;
   }
-  .small-icon {
-    font-size: 25px;
-  }
-}  
-.proj-techs {
-display: flex;
-flex-wrap: wrap;
-}
-
-.proj-button {
-  margin: 5px 0px 0px 5px;
 }
 
 .arrow-buttons {
   display: flex;
   justify-content: space-evenly;
-  button {
-    width: 115px;
+  p {
+    font-size: 30px;
+    font-weight: 20em;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
   }
+}
+
+.arrow-buttons p:hover {
+  color: $brand-purple;
+  cursor: pointer;
 }
 
 .image-card {
@@ -158,6 +177,10 @@ flex-wrap: wrap;
     font-size: 50px;
   }
 
+  .proj-text-container {
+    max-width: 75%;
+  }
+
   .software-icons {
     justify-content: left;
   }
@@ -166,6 +189,9 @@ flex-wrap: wrap;
 @media only screen and (max-width: 600px) {
   .proj-techs {
     justify-content: center;
+    i {
+      font-size: 45px;
+    }
   }
 
   .project-links {

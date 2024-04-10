@@ -45,6 +45,11 @@ function App() {
               </a>
             </div>
             <div className="navbar-end">
+              <span className="navbar-item nav-button">
+                <p className="translate material-symbols-outlined" alt="Translate" title="Translate">
+                  translate
+                </p>
+              </span>
               <a className="navbar-item" href="#contact">
                 <p>Contact Me</p>
               </a>
@@ -78,7 +83,7 @@ function App() {
         <div className="columns">
           <div className="column is-two-fifths">
             <h1 className="title"><span className="purple-text">A</span>bout Me</h1>
-            <h2 className="subtitle">I am a Fullstack Software Engineer with a background in marketing and linguistics.</h2>
+            <h2 className="subtitle">I am a Fullstack Software Engineer with over two years professional experience.</h2>
             <AboutMe />
           </div>
           <div className="column is-three-fifths">
@@ -192,19 +197,19 @@ function App() {
       <section className="section is-medium" id="interests">
         <h1 className="title"><span className="purple-text">I</span>nterests</h1>
         <div className="columns">
-          <div className="column is-third image-card language" title="Japanese caligraphy.">
+          <div className="column is-third image-card language" alt="Japanese caligraphy.">
             <div className="card-text">
               <h2>Language Learning</h2>
               <p>I speak business level Japanese and elementary level Korean and still keep up with my studies regularly.</p>
             </div>
           </div>
-          <div className="column is-third image-card music" title="Fender jazz bass headstock.">
+          <div className="column is-third image-card music" alt="Fender jazz bass headstock.">
             <div className="card-text">
               <h2>Music</h2>
               <p>I have been playing bass guitar for over ten years and enjoy record collecting.</p>
             </div>
           </div>
-          <div className="column is-third image-card bouldering" title="Indoor bouldering gym.">
+          <div className="column is-third image-card bouldering" alt="Indoor bouldering gym.">
             <div className="card-text">
               <h2>Bouldering</h2>
               <p>I developed a passion for indoor bouldering due to its challenging, problem-solving nature and go weekly.</p>

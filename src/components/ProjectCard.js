@@ -28,35 +28,38 @@ function ProjectCard() {
       <div className="columns">
         <div className="column is-two-fifths">
           <h1 className="title"><span className="purple-text">P</span>rojects</h1>
-          <figure className="image is-16by9">
-            <img src={projects[projectsIndex].image} alt={projects[projectsIndex].title}/>
-          </figure>
-        </div>
-        <div className="column is-three-fifths">
-          <div className="proj-text-container">
-            <h1 className="title">{projects[projectsIndex].title}</h1>
-            <p className="text">
-              {projects[projectsIndex].info}
-            </p>
+          <div className="proj-img">
+            <figure className="image is-16by9">
+              <img src={projects[projectsIndex].image} alt={projects[projectsIndex].title}/>
+            </figure>
             <div className="proj-techs">
               {projects[projectsIndex].techIcons.map(icon =>(
                 <i key={icon} className={icon}></i>
               ))}
             </div>
-            <div className="project-links">
-              <a href={projects[projectsIndex].deployedLink} className="button is-rounded proj-button">
+          </div>
+        </div>
+        <div className="column is-three-fifths">
+          <div className="proj-text-container">
+            <h1 className="title">{projects[projectsIndex].title}</h1>
+            <div className="proj-links">
+              <a href={projects[projectsIndex].deployedLink} className="proj-button">
                 <i className="devicon-firefox-plain small-icon"></i>
               </a>
-              <a href={projects[projectsIndex].github} className="button is-rounded proj-button">
+              <a href={projects[projectsIndex].github} className="proj-button">
                 <i className="devicon-github-original small-icon"></i>
               </a>
             </div>
+            <p className="text">
+              {projects[projectsIndex].info}
+            </p>
+            
           </div>
         </div>
       </div>
       <div className="arrow-buttons">
-        <button className="button is-inverted" onClick={handlePrevious}>←</button>
-        <button className="button is-inverted" onClick={handleNext}>→</button>
+        <p className="arrow" onClick={handlePrevious}>←</p>
+        <p className="arrow" onClick={handleNext}>→</p>
       </div>
     </>
   )
