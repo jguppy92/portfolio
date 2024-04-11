@@ -2,10 +2,16 @@
 
 $brand-dark-grey: #242323;
 $brand-purple: #ac6fde;
+$font-english: 'Roboto Slab', serif;
+$font-japanese: 'Noto Sans JP', sans-serif;
 
 * {
-  font-family: 'Roboto Slab', serif;
+  font-family: $font-english;
   box-sizing: border-box;
+}
+
+.japanese {
+  font-family: $font-japanese;
 }
 
 .navbar-item {
@@ -15,6 +21,12 @@ $brand-purple: #ac6fde;
 .navbar-item p:hover {
   color: $brand-purple;
   cursor: pointer;
+}
+
+.translate {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .navbar-burger {
@@ -135,13 +147,13 @@ hr {
   justify-content: end;
   background-color: rgba(36, 35, 34, 0.75); /* Tint color */
   background-blend-mode: multiply;
-  h2 {
-    font-size: 20px;
-    font-weight: bolder;
-  }
   h2, p {
     color: white;
     padding: 0px 15px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: bolder;
   }
   p {
     margin-bottom: 20px;
@@ -183,6 +195,10 @@ hr {
 
   .software-icons {
     justify-content: left;
+  }
+
+  .socials {
+    flex-wrap: wrap;
   }
 }
 

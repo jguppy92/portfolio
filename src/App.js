@@ -3,9 +3,11 @@ import { SocialIcon } from 'react-social-icons'
 import Typical from 'react-typical'
 import ProjectCard from './components/ProjectCard'
 import AboutMe from './data/AboutMeBio'
+import { heroText } from './components/Text'
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false)
+  const [isEnglish, setIsEnglish] = React.useState(true)
 
   const handleToggle = () => {
     setIsOpen(!isOpen)
@@ -14,6 +16,15 @@ function App() {
   React.useEffect(() => {
     setIsOpen(false)
   }, [])
+
+  function handleLanguage() {
+    const body = document.getElementById('body')
+    if (isEnglish) {
+      setIsEnglish(false)
+      body.classList.add('japanese')
+      console.log('jpn')
+    } else setIsEnglish(true)
+  }
 
   return (
     <>
@@ -35,23 +46,23 @@ function App() {
           <div className={`navbar-menu dark ${isOpen ? 'is-active' : ''}`}>
             <div className="navbar-start">
               <a className="navbar-item" href="#about">
-                <p>About Me</p>
+                <p>{isEnglish ? 'About Me' : 'プロフィール'}</p>
               </a>
               <a className="navbar-item" href="#projects">
-                <p>Projects</p>
+                <p>{isEnglish ? 'Projects' : '制作物'}</p>
               </a>
               <a className="navbar-item" href="#interests">
-                <p>Interests</p>
+                <p>{isEnglish ? 'Interests' : '趣味'}</p>
               </a>
             </div>
             <div className="navbar-end">
               <span className="navbar-item nav-button">
-                <p className="translate material-symbols-outlined" alt="Translate" title="Translate">
+                <p className="translate material-symbols-outlined" alt="Translate" title="Translate" onClick={handleLanguage}>
                   translate
                 </p>
               </span>
               <a className="navbar-item" href="#contact">
-                <p>Contact Me</p>
+                <p>{isEnglish ? 'Contact Me' : '連絡先'}</p>
               </a>
             </div>
           </div>
@@ -61,11 +72,14 @@ function App() {
         <div className="hero-body">
           <div className="container has-text-centered">
             <p className="title hero-title">
-              James Guppy
+              {isEnglish ? heroText.title.en : heroText.title.jp}
             </p>
             <p className="subtitle hero-subtitle">
               <Typical 
-                steps={['Fullstack Software Engineer', 1000]}
+                steps={[
+                  `${isEnglish ? heroText.subtitle.en : heroText.subtitle.jp}`,
+                  1000
+                ]}
               />
             </p>
             <hr/>
@@ -200,19 +214,19 @@ function App() {
           <div className="column is-third image-card language" alt="Japanese caligraphy.">
             <div className="card-text">
               <h2>Language Learning</h2>
-              <p>I speak business level Japanese and elementary level Korean and still keep up with my studies regularly.</p>
+              <p>I speak business level Japanese and elementary level Korean and regularly keep up with my studies.</p>
             </div>
           </div>
           <div className="column is-third image-card music" alt="Fender jazz bass headstock.">
             <div className="card-text">
               <h2>Music</h2>
-              <p>I have been playing bass guitar for over ten years and enjoy record collecting.</p>
+              <p>I have been playing bass guitar for over ten years and have experience writing and recording my own music.</p>
             </div>
           </div>
           <div className="column is-third image-card bouldering" alt="Indoor bouldering gym.">
             <div className="card-text">
               <h2>Bouldering</h2>
-              <p>I developed a passion for indoor bouldering due to its challenging, problem-solving nature and go weekly.</p>
+              <p>I have a huge love for indoor bouldering due to the physical challenge and problem-solving nature of the sport.</p>
             </div>
           </div>
         </div>       
@@ -248,7 +262,7 @@ function App() {
                 className="social-icon"
               />
               <p className="text">
-              j.guppy321@gmail.com
+                j.guppy321@gmail.com
               </p>
             </div>
           </div>
