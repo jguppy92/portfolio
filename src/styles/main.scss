@@ -144,7 +144,7 @@ hr {
   margin: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   background-color: rgba(36, 35, 34, 0.75); /* Tint color */
   background-blend-mode: multiply;
   h2, p {
