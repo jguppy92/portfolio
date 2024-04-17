@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 import Typical from 'react-typical'
 import ProjectCard from './components/ProjectCard'
 import AboutMe from './data/AboutMeBio'
-import { heroText } from './components/Text'
+import { heroText } from './components/BodyText'
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -18,12 +18,7 @@ function App() {
   }, [])
 
   function handleLanguage() {
-    const body = document.getElementById('body')
-    if (isEnglish) {
-      setIsEnglish(false)
-      body.classList.add('japanese')
-      console.log('jpn')
-    } else setIsEnglish(true)
+    isEnglish ? setIsEnglish(false) : setIsEnglish(true)
   }
 
   return (
@@ -52,7 +47,7 @@ function App() {
                 <p>{isEnglish ? 'Projects' : '制作物'}</p>
               </a>
               <a className="navbar-item" href="#interests">
-                <p>{isEnglish ? 'Interests' : '趣味'}</p>
+                <p>{isEnglish ? 'Interests' : '興味'}</p>
               </a>
             </div>
             <div className="navbar-end">
@@ -61,7 +56,7 @@ function App() {
                   translate
                 </p>
               </span>
-              <a className="navbar-item" href="#contact">
+              <a className="navbar-item contact-button" href="#contact">
                 <p>{isEnglish ? 'Contact Me' : '連絡先'}</p>
               </a>
             </div>
@@ -96,12 +91,18 @@ function App() {
       <section className="section is-medium" id="about">
         <div className="columns">
           <div className="column is-two-fifths">
-            <h1 className="title"><span className="purple-text">A</span>bout Me</h1>
+            {isEnglish ? 
+              <h1 className="title"><span className="purple-text">A</span>bout Me</h1> :
+              <h1 className="title"><span className="purple-text">プ</span>ロフィール</h1>
+            }
             <h2 className="subtitle">I am a Fullstack Software Engineer with over two years professional experience.</h2>
             <AboutMe />
           </div>
           <div className="column is-three-fifths">
-            <h1 className="title">Skills</h1>
+            {isEnglish ? 
+              <h1 className="title">Skills</h1> :
+              <h1 className="title">スキル</h1>
+            }
             <div className="container-software">
               <ul className="software-icons">
                 <li className="cell">
@@ -133,7 +134,7 @@ function App() {
                   <span>React</span>
                 </li>
                 <li className="cell">
-                  <i className="devicon-nodejs-plain"></i>
+                  <i className="devicon-nodejs-plain-wordmark"></i>
                   <span>Node.js</span>
                 </li>
                 <li className="cell">
@@ -143,6 +144,10 @@ function App() {
                 <li className="cell">
                   <i className="devicon-django-plain"></i>
                   <span>Django</span>
+                </li>
+                <li className="cell">
+                  <i className="devicon-pytest-plain"></i>
+                  <span>Pytest</span>
                 </li>
                 <li className="cell">
                   <i className="devicon-sass-original"></i>
@@ -196,20 +201,19 @@ function App() {
                   <i className="devicon-linux-plain"></i>
                   <span>Linux</span>
                 </li>
-                <li className="cell">
-                  <i className="devicon-vscode-plain"></i>
-                  <span>VS Code</span>
-                </li>
               </ul>
             </div>
           </div>
         </div>       
       </section>
       <section className="section is-medium dark" id="projects">
-        <ProjectCard />      
+        <ProjectCard isEnglish={isEnglish} />      
       </section>
       <section className="section is-medium" id="interests">
-        <h1 className="title"><span className="purple-text">I</span>nterests</h1>
+        {isEnglish ? 
+          <h1 className="title"><span className="purple-text">I</span>nterests</h1> :
+          <h1 className="title"><span className="purple-text">興</span>味</h1>
+        }
         <div className="columns">
           <div className="column is-third image-card language" alt="Japanese caligraphy.">
             <div className="card-text">
@@ -232,7 +236,10 @@ function App() {
         </div>       
       </section>
       <section className="section is-medium dark" id="contact">
-        <h1 className="title"><span className="purple-text">C</span>ontact Me</h1>
+        {isEnglish ? 
+          <h1 className="title"><span className="purple-text">C</span>ontact Me</h1> :
+          <h1 className="title"><span className="purple-text">連</span>連絡先</h1>
+        }
         <div className="columns">
           <div className="column is-third">
             <div className="socials">

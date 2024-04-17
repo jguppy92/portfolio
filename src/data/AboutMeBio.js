@@ -4,16 +4,15 @@ import React from 'react'
 function AboutMe() {
   return (
     <p className="text">
-      My journey into coding started when I was 16 and studying for my A-Levels. I picked up some Visual Basic and Pascal during an IT class and immediately fell in love with building simple applications and problem solving.<br/>
+      My journey into software development started in school when I picked up some Visual Basic and Pascal during an IT class and immediately fell in love with building simple applications and problem solving.<br/>
       <br/>
 
-
-      After spending four years studying a degree in Japanese and Korean at SOAS, University of London, and two years working in a marketing role in the video game industry, I felt the itch to flex my brain again and return to coding.<br/>
+      After spending four years studying a degree in Japanese and Korean at SOAS, University of London, and two years working in the video game industry, I felt the itch to flex my brain again and return to coding.<br/>
       <br/>
 
-
-      Having over two years of full stack web development experience in the affiliate marketing industry, I was able to solidify a range of technical and personal skills. During this time I built a range of projects using various frontend and backend technologies. I feel most at home on the MERN stack and building RESTful and GraphQL APIs in Django. On top of this I also have some experience coding in Ruby which I’d love an opportunity to develop further.<br/>
+      Throughout my time working as a developer I have built a range of projects from browser extension support tools to custom affiliate tracking solutions and CRUD APIs. I’m proficient at building RESTful and GraphQL backends in technologies such as Django and Express.js, as well using popular frontend frameworks like React.js.<br/>
       <br/>
+
 	    Check out my past and current projects below and feel free to get in touch!
     </p>
   )

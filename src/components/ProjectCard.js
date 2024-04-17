@@ -1,7 +1,7 @@
 import React from 'react'
 import { projects } from '../data/ProjectsData'
 
-function ProjectCard() {
+function ProjectCard({ isEnglish }) {
   
   const [projectsIndex, setProjectsIndex] = React.useState(0)
 
@@ -21,13 +21,14 @@ function ProjectCard() {
     }
   }
 
-
-
   return (
     <>
       <div className="columns">
         <div className="column is-two-fifths">
-          <h1 className="title"><span className="purple-text">P</span>rojects</h1>
+          {isEnglish ?
+            <h1 className="title"><span className="purple-text">P</span>rojects</h1> :
+            <h1 className="title"><span className="purple-text">プ</span>ロジェクト</h1>
+          }
           <div className="proj-img">
             <figure className="image is-16by9">
               <img src={projects[projectsIndex].image} alt={projects[projectsIndex].title}/>
