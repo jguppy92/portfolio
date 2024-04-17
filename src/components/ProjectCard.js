@@ -1,5 +1,5 @@
 import React from 'react'
-import { projects } from '../data/ProjectsData'
+import { projects } from '../data/BodyText'
 
 function ProjectCard({ isEnglish }) {
   
@@ -52,15 +52,15 @@ function ProjectCard({ isEnglish }) {
               </a>
             </div>
             <p className="text">
-              {projects[projectsIndex].info}
+              {projects[projectsIndex].engInfo}
             </p>
             
           </div>
         </div>
       </div>
       <div className="arrow-buttons">
-        <p className="arrow" onClick={handlePrevious}>←</p>
-        <p className="arrow" onClick={handleNext}>→</p>
+        <p className="arrow" alt="Previous project" onClick={handlePrevious}>←</p>
+        <p className="arrow" alt="Next project" onClick={handleNext}>→</p>
       </div>
     </>
   )

@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 import Typical from 'react-typical'
 import ProjectCard from './components/ProjectCard'
 import AboutMe from './data/AboutMeBio'
-import { heroText } from './components/BodyText'
+import { heroText } from './data/BodyText'
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -238,7 +238,7 @@ function App() {
       <section className="section is-medium dark" id="contact">
         {isEnglish ? 
           <h1 className="title"><span className="purple-text">C</span>ontact Me</h1> :
-          <h1 className="title"><span className="purple-text">連</span>連絡先</h1>
+          <h1 className="title"><span className="purple-text">連</span>絡先</h1>
         }
         <div className="columns">
           <div className="column is-third">
