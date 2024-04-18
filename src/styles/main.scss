@@ -181,6 +181,10 @@ hr {
 }
 
 @media only screen and (min-width: 600px) {
+  section {
+    min-height: 100vh;
+  }
+
   .contact-button {
     p {
       min-width: 86px;
@@ -208,8 +212,8 @@ hr {
     justify-content: left;
   }
 
-  section {
-    height: screen;
+  .socials {
+    margin-top: 8rem;
   }
 }
 

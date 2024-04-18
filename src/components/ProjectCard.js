@@ -51,9 +51,15 @@ function ProjectCard({ isEnglish }) {
                 <i className="devicon-github-original small-icon"></i>
               </a>
             </div>
-            <p className="text">
-              {projects[projectsIndex].engInfo}
-            </p>
+            {
+              isEnglish ?
+                <p className="text">
+                  {projects[projectsIndex].engInfo}
+                </p> :
+                <p className="text">
+                  {projects[projectsIndex].jpnInfo}
+                </p>
+            }
             
           </div>
         </div>

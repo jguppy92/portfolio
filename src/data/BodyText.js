@@ -15,6 +15,7 @@ export const projects = [
     image: 'https://res.cloudinary.com/dodgizm5d/image/upload/v1633556256/jg-portfolio/godzilla-is-hungry-fullscreen.png',
     techIcons: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
     engInfo: 'A PacMan clone built entirely in HTML5, CSS3 and Vanilla JavaScript over a seven day period as a solo project. The game features full player and enemy movement, player lives and score counter, multiple levels, enemies with different behaviours and toggleable audio.',
+    jpnInfo: '７日間のソロプロジェクトで完全にHTML５、CSS3、Vanilla JavaScriptで作成したパックマンクローンゲームです。ゲームはプレイヤーキャラクターと敵の移動、プレイヤー命と点数カウンター、複数ステージ、様々な敵の行動や音楽のトグルボタンの機能があります。',
     deployedLink: 'https://jguppy92.github.io/sei-project-one/',
     github: 'https://github.com/jguppy92/sei-project-one',
   },

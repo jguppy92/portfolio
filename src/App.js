@@ -51,14 +51,14 @@ function App() {
               </a>
             </div>
             <div className="navbar-end">
+              <a className="navbar-item contact-button" href="#contact">
+                <p>{isEnglish ? 'Contact Me' : '連絡先'}</p>
+              </a>
               <span className="navbar-item nav-button">
                 <p className="translate material-symbols-outlined" alt="Translate" title="Translate" onClick={handleLanguage}>
                   translate
                 </p>
               </span>
-              <a className="navbar-item contact-button" href="#contact">
-                <p>{isEnglish ? 'Contact Me' : '連絡先'}</p>
-              </a>
             </div>
           </div>
         </div>
@@ -79,11 +79,11 @@ function App() {
             </p>
             <hr/>
             <SocialIcon 
-              url="https://github.com/jguppy92" bgColor="#ac6fde" className="social-icon"
+              url="https://github.com/jguppy92" bgColor="#ac6fde" className="social-icon hero-socials"
             />
             <SocialIcon 
               url="https://linkedin.com/in/james-guppy/" bgColor="#ac6fde" 
-              className="social-icon"
+              className="social-icon hero-socials"
             />
           </div>
         </div>
