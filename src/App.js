@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 import Typical from 'react-typical'
 import ProjectCard from './components/ProjectCard'
 import AboutMe from './data/AboutMeBio'
-import { heroText } from './data/BodyText'
+import { aboutMeText, heroText, interestsText } from './data/BodyText'
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -54,7 +54,7 @@ function App() {
               <a className="navbar-item contact-button" href="#contact">
                 <p>{isEnglish ? 'Contact Me' : '連絡先'}</p>
               </a>
-              <span className="navbar-item nav-button">
+              <span className="navbar-item">
                 <p className="translate material-symbols-outlined" alt="Translate" title="Translate" onClick={handleLanguage}>
                   translate
                 </p>
@@ -95,8 +95,14 @@ function App() {
               <h1 className="title"><span className="purple-text">A</span>bout Me</h1> :
               <h1 className="title"><span className="purple-text">プ</span>ロフィール</h1>
             }
-            <h2 className="subtitle">I am a Fullstack Software Engineer with over two years professional experience.</h2>
-            <AboutMe />
+            
+            <h2 className="subtitle">
+              {isEnglish ? aboutMeText.subtitle.en : aboutMeText.subtitle.jp}
+            </h2>
+            {/* <p className="text">
+              {isEnglish ? parent.innerHTML = aboutMeText.eng : aboutMeText.jpn}
+            </p> */}
+            <AboutMe isEnglish={isEnglish} />
           </div>
           <div className="column is-three-fifths">
             {isEnglish ? 
@@ -217,20 +223,44 @@ function App() {
         <div className="columns">
           <div className="column is-third image-card language" alt="Japanese caligraphy.">
             <div className="card-text">
-              <h2>Language Learning</h2>
-              <p>I speak business level Japanese and elementary level Korean and regularly keep up with my studies.</p>
+              <h2>
+                {
+                  isEnglish ?
+                    interestsText.languageLearning.subtitle.en :
+                    interestsText.languageLearning.subtitle.jp
+                }
+              </h2>
+              <p>
+                {isEnglish ? interestsText.languageLearning.en : interestsText.languageLearning.jp}
+              </p>
             </div>
           </div>
           <div className="column is-third image-card music" alt="Fender jazz bass headstock.">
             <div className="card-text">
-              <h2>Music</h2>
-              <p>I have been playing bass guitar for over ten years and have experience writing and recording my own music.</p>
+              <h2>
+                {
+                  isEnglish ?
+                    interestsText.music.subtitle.en :
+                    interestsText.music.subtitle.jp
+                }
+              </h2>
+              <p>
+                {isEnglish ? interestsText.music.en : interestsText.music.jp}
+              </p>
             </div>
           </div>
           <div className="column is-third image-card bouldering" alt="Indoor bouldering gym.">
             <div className="card-text">
-              <h2>Bouldering</h2>
-              <p>I have a huge love for indoor bouldering due to the physical challenge and problem-solving nature of the sport.</p>
+              <h2>
+                {
+                  isEnglish ?
+                    interestsText.bouldering.subtitle.en :
+                    interestsText.bouldering.subtitle.jp
+                }
+              </h2>
+              <p>
+                {isEnglish ? interestsText.bouldering.en : interestsText.bouldering.jp}
+              </p>
             </div>
           </div>
         </div>       

@@ -54,10 +54,10 @@ function ProjectCard({ isEnglish }) {
             {
               isEnglish ?
                 <p className="text">
-                  {projects[projectsIndex].engInfo}
+                  {projects[projectsIndex].enInfo}
                 </p> :
-                <p className="text">
-                  {projects[projectsIndex].jpnInfo}
+                <p className="text japanese">
+                  {projects[projectsIndex].jpInfo}
                 </p>
             }
             

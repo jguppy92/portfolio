@@ -6,12 +6,8 @@ $font-english: 'Roboto Slab', serif;
 $font-japanese: 'Noto Sans JP', sans-serif;
 
 * {
-  font-family: $font-english;
+  font-family: $font-english, $font-japanese;
   box-sizing: border-box;
-}
-
-.japanese {
-  font-family: $font-japanese;
 }
 
 .navbar-item {
@@ -197,11 +193,7 @@ hr {
   }
 
   .hero-subtitle {
-    font-size: 50px;
-  }
-
-  .proj-img:hover {
-    flex-grow: 2;
+    font-size: 30px;
   }
 
   .proj-text-container {
