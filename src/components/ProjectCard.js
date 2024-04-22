@@ -66,6 +66,7 @@ function ProjectCard({ isEnglish }) {
       </div>
       <div className="arrow-buttons">
         <p className="arrow" alt="Previous project" onClick={handlePrevious}>←</p>
+        <p className="proj-index">{projectsIndex + 1} / {projects.length}</p>
         <p className="arrow" alt="Next project" onClick={handleNext}>→</p>
       </div>
     </>
