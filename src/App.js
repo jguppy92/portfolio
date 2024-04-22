@@ -95,13 +95,9 @@ function App() {
               <h1 className="title"><span className="purple-text">A</span>bout Me</h1> :
               <h1 className="title"><span className="purple-text">プ</span>ロフィール</h1>
             }
-            
             <h2 className="subtitle">
               {isEnglish ? aboutMeText.subtitle.en : aboutMeText.subtitle.jp}
             </h2>
-            {/* <p className="text">
-              {isEnglish ? parent.innerHTML = aboutMeText.eng : aboutMeText.jpn}
-            </p> */}
             <AboutMe isEnglish={isEnglish} />
           </div>
           <div className="column is-three-fifths">

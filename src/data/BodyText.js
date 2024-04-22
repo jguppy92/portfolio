@@ -46,7 +46,7 @@ export const projects = [
     image: 'https://res.cloudinary.com/dodgizm5d/image/upload/v1633556256/jg-portfolio/godzilla-is-hungry-fullscreen.png',
     techIcons: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
     enInfo: 'A PacMan clone built entirely in HTML5, CSS3 and Vanilla JavaScript over a seven day period as a solo project. The game features full player and enemy movement, player lives and score counter, multiple levels, enemies with different behaviours and toggleable audio.',
-    jpInfo: '７日間のソロプロジェクトで完全にHTML５、CSS3、Vanilla JavaScriptで作成したパックマンクローンゲームです。ゲームはプレイヤーキャラクターと敵の移動、プレイヤー命と点数カウンター、複数ステージ、様々な敵の行動や音楽のトグルボタンの機能があります。',
+    jpInfo: '７日間のソロプロジェクトで、HTML５、CSS3、Vanilla JavaScriptを用いて作成したパックマンクローンゲームです。ゲームはプレイヤーキャラクターと敵の移動、プレイヤー命と点数カウンター、複数ステージ、様々な敵の行動や音楽のトグルボタンの機能があります。',
     deployedLink: 'https://jguppy92.github.io/sei-project-one/',
     github: 'https://github.com/jguppy92/sei-project-one',
   },
@@ -55,25 +55,25 @@ export const projects = [
     image: 'https://res.cloudinary.com/dodgizm5d/image/upload/v1633556815/jg-portfolio/scran.png',
     techIcons: ['devicon-sass-original', 'devicon-bulma-plain', 'devicon-react-original'],
     enInfo: 'A front end project that harnesses a third party API to produce a random meal for users. The project was built using React, Bulma and custom Sass in a group of three members. We produced this project as a 48 hour ‘hackathon’-style challenge. I focussed in particular on hooking up the core API functionality and the get random meal page.',
-    jpInfo: '行き当たりばったりのレシピを表示するために、第三者のAPIを使用しているフロントエンドプロジェクトです。３人グループでReact、Bulma、Sassで作成しました。４８時間の「Hackathon]のスタイルで開発しました。私は特に基礎のAPI機能を繋がりで、行き当たりばったりレシピページを集中しました。',
+    jpInfo: '無作為にレシピを表示するために、第三者のAPIを使用しているフロントエンドプロジェクトです。３人のグループで、React、Bulma、Sassを用いて作成しました。４８時間の「Hackathon]のスタイルで開発しました。私は特に基礎のAPI機能の接続、無作為レシピページの作成に集中的に取り組みました。',
     deployedLink: 'https://scran.netlify.app/',
     github: 'https://github.com/jguppy92/sei-project-two',
   },
   {
     title: 'Away Days',
     image: 'https://res.cloudinary.com/dodgizm5d/image/upload/v1633556490/jg-portfolio/away-days-the-bill-nic.png',
-    techIcons: ['devicon-sass-original', 'devicon-bootstrap-plain', 'devicon-react-original', 'devicon-express-original', 'devicon-mongodb-plain', 'devicon-nodejs-plain-wordmark', 'devicon-npm-original-wordmark'],
+    techIcons: ['devicon-sass-original', 'devicon-bootstrap-plain', 'devicon-react-original', 'devicon-express-original', 'devicon-mongodb-plain', 'devicon-nodejs-plain-wordmark'],
     enInfo: 'Full stack MERN web app with CRUD functionality. This was a group project with a seven day turn around period. I built the entire backend (including seed functions) as a REST API using Express and MongoDB. Front end was built in collaboration with two other group members using React and Bootstrap. In particular I built the register / login pages and the like / unlike functionality.',
-    jpInfo: 'CRUD機能があるMERNフルスタックwebアプリです。グループプロジェクトであり、７日間開発しました。私はREST APIとして、ExpressやMongoDBでバックエンドを作成しました。フロントエンドは二人のグループメンバーと共同でReactやBootstrapで開発されました。フロントエンドに関して、私は特にサインアップページとライク・アンライクの機能を作成しました。',
+    jpInfo: 'CRUD機能があるMERNフルスタックwebアプリです。グループプロジェクトで、７日間で開発しました。私はREST APIとして、ExpressやMongoDBでバックエンドを作成しました。フロントエンドは二人のグループメンバーと共同でReactやBootstrapで開発しました。フロントエンドに関して、私は特にサインアップページとライク・アンライクの機能を作成しました。',
     deployedLink: 'https://away-days0.netlify.app/',
     github: 'https://github.com/jguppy92/project-three-frontend',
   },
   {
     title: 'Find Floppas',
     image: 'https://res.cloudinary.com/dodgizm5d/image/upload/v1633557180/jg-portfolio/find-floppas.png',
-    techIcons: ['devicon-sass-original', 'devicon-bulma-plain', 'devicon-react-original', 'devicon-django-plain', 'devicon-python-plain', 'devicon-postgresql-plain', 'devicon-npm-original-wordmark'],
+    techIcons: ['devicon-sass-original', 'devicon-bulma-plain', 'devicon-react-original', 'devicon-django-plain', 'devicon-python-plain', 'devicon-postgresql-plain'],
     enInfo: 'A full stack web app heavily inspired by the likes of Tinder / Bumble. The backend was created using Python, Django, Django REST Framework and PostgreSQL, while the frontend was built using React and styled with Bulma and Sass. The project was completed within seven days with full user messaging and matching functionality and built entirely solo.',
-    jpInfo: 'TinderやBumbleなどのデートアプリに影響されたフルスタックwebアプリです。バックエンドはPython、Django、Django REST FrameworkやPostgreSQLで作成し、フロントエンドはReact、Bulma、Sassなどで開発しました。このプロジェクトはメッセージとユーザーマッチング機能を含み、７日間一人で完成されました。',
+    jpInfo: 'TinderやBumbleなどのデートアプリにインスパイアされたフルスタックwebアプリです。バックエンドはPython、Django、Django REST FrameworkやPostgreSQLで作成し、フロントエンドはReact、Bulma、Sassなどで開発しました。このプロジェクトはメッセージとユーザーマッチング機能を含むもので、一人で7日間で作成しました。',
     deployedLink: 'https://find-floppas.netlify.app/',
     github: 'https://github.com/jguppy92/project-four-frontend',
   }
@@ -83,10 +83,10 @@ export const interestsText = {
   languageLearning: {
     subtitle: {
       en: 'Language Learning',
-      jp: '言語学',
+      jp: '言語習得',
     },
     en: 'I speak business level Japanese and elementary level Korean and regularly keep up with my studies.',
-    jp: 'ビジネス級日本語と初級韓国語を喋れ、今でも毎日勉強しております。',
+    jp: '日本語をビジネスレベル、韓国語を初級レベルで喋ることができ、今でも力を入れて勉強しています。',
   },
   music: {
     subtitle: {
@@ -94,7 +94,7 @@ export const interestsText = {
       jp: '音楽',
     },
     en: 'I have been playing bass guitar for over ten years and have experience writing and recording my own music.',
-    jp: '10年以上ベースを弾いており、自分の曲を作曲して録音した経験があります。',
+    jp: '10年以上ベースを弾いており、自ら作曲・レコーディングした経験があります。',
   },
   bouldering: {
     subtitle: {
@@ -102,6 +102,6 @@ export const interestsText = {
       jp: 'ボルダリング',
     },
     en: 'I have a huge love for indoor bouldering due to the physical challenge and problem-solving nature of the sport.',
-    jp: '肉体的な挑戦で問題解決につながる性質のため、ボルダリングに情熱を持っています。',
+    jp: 'インドアボルダリングの、フィジカルに挑戦的で問題解決を求められる性質に魅了され、情熱を持って取り組んでいます。',
   },
 }

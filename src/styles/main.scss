@@ -33,6 +33,10 @@ hr {
   background-color: $brand-purple;
 }
 
+h2, p {
+  line-break: strict;
+}
+
 .social-icon {
   margin: 0px 5px;
 }
@@ -176,7 +180,7 @@ hr {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width:1025px) {
   section {
     min-height: 100vh;
   }
@@ -209,7 +213,20 @@ hr {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width:600px) {
+  .proj-techs {
+    justify-content: center;
+    i {
+      font-size: 45px;
+    }
+  }
+
+  .project-links {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width:480px) {
   .proj-techs {
     justify-content: center;
     i {
