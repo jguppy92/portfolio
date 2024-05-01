@@ -176,10 +176,6 @@ function App() {
                   <span>PostgreSQL</span>
                 </li>
                 <li className="cell">
-                  <i className="devicon-npm-original-wordmark"></i>
-                  <span>npm</span>
-                </li>
-                <li className="cell">
                   <i className="devicon-git-plain"></i>
                   <span>Git</span>
                 </li>
@@ -190,6 +186,10 @@ function App() {
                 <li className="cell">
                   <i className="devicon-gitlab-plain"></i>
                   <span>GitLab</span>
+                </li>
+                <li className="cell">
+                  <i className="devicon-amazonwebservices-plain-wordmark"></i>
+                  <span>AWS</span>
                 </li>
                 <li className="cell">
                   <i className="devicon-heroku-original"></i>
