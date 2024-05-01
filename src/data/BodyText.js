@@ -70,7 +70,7 @@ export const projects = [
   },
   {
     title: 'Find Floppas',
-    image: 'https://res.cloudinary.com/dodgizm5d/image/upload/v1633557180/jg-portfolio/find-floppas.png',
+    image: 'https://res.cloudinary.com/dodgizm5d/image/upload/v1714581571/jg-portfolio/Screenshot_2024-05-01_at_17-08-25_Find_Floppas_in_Your_Area_guctl7.png',
     techIcons: ['devicon-sass-original', 'devicon-bulma-plain', 'devicon-react-original', 'devicon-django-plain', 'devicon-python-plain', 'devicon-postgresql-plain'],
     enInfo: 'A full stack web app heavily inspired by the likes of Tinder / Bumble. The backend was created using Python, Django, Django REST Framework and PostgreSQL, while the frontend was built using React and styled with Bulma and Sass. The project was completed within seven days with full user messaging and matching functionality and built entirely solo. Deployed to AWS via Amplify',
     jpInfo: 'TinderやBumbleなどのデートアプリにインスパイアされたフルスタックwebアプリです。バックエンドはPython、Django、Django REST FrameworkやPostgreSQLで作成し、フロントエンドはReact、Bulma、Sassなどで開発しました。このプロジェクトはメッセージとユーザーマッチング機能を含むもので、一人で7日間で作成しました。AmplifyでAWSにデプロイしました。',
